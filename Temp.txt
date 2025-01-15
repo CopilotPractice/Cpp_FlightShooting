@@ -1,0 +1,48 @@
+﻿#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() 
+{
+	vector<int> vector;
+	int input_size;
+	int input_number;
+
+	
+
+	int inputResultNumber;
+	cin >> input_size >> input_number;
+
+	int* result = new int[input_size];
+
+	for (int i = 0; i < input_number;++i) {
+
+		cin >> inputResultNumber;
+		vector.push_back(inputResultNumber);
+	}
+
+	int temp_number = 0;
+	
+	while (true) {
+		if (input_number == 0) {
+			break;
+		}
+		for (int i = 0;i < input_size;++i) {
+			result[temp_number] = vector[i];
+		}
+
+		result[i] = result[i - 1]
+
+		++temp_number;
+		if (temp_number == input_size) {
+			temp_number = 0;
+		}
+	}
+
+	for (int i = 0;i < input_size; ++i) {
+
+	}
+
+	
+}
